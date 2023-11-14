@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+
+    <section class="main-container">
+
+        <div class="sub-container">
+
+            <div class="image-section">
+
+                <div class="image-text">
+                    <h1>Learn and Practice</h1>
+                    <p>“No matter what experience you have. We will help you start coding in minutes”.</p>
+                </div>
+
+            </div>
+
+            <div class="form-section">
+
+                <div class="signin-form">
+
+                    <h1>Sign In</h1>
+
+                    <div class="user-name">
+                        <label>User Name</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="password">
+                        <label>Password</label>
+                        <div class="pass-view">
+                            <input type="password" id="passwordInput">
+                            <i class="view-icon" id="togglePassword">👁️</i>
+                        </div>
+                    </div>
+
+                    <div class="radio-cont">
+                        <div class="remember">
+                            <input type="radio" id="html" name="remember" value="HTML">
+                            <label for="html">Remember Me</label>
+                        </div>
+                    </div>
+
+                    <div class="login-btn">
+                        <button>Login</button>
+                        <p>Don’t have an account? <a href="">Sign up</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const passwordInput = document.getElementById('passwordInput');
+        const togglePassword = document.getElementById('togglePassword');
+
+        togglePassword.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            togglePassword.textContent = type === 'password' ? '👁️' : '👁️‍🗨️';
+        });
+    </script>
+
+</body>
+
+</html>
