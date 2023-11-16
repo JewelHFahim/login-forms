@@ -6,7 +6,9 @@ body {
   box-sizing: border-box;
 }
 
-/* 23AC62  */
+/*main color- #9142FF */
+/*shadow color- #c0a6e5 */
+
 
 
 .main-container {
@@ -30,8 +32,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* background: #ffd79e; */
-  box-shadow: 16px 17px 40px 0px #90dbb3,
+  background: #9142FF;
+  box-shadow: 16px 17px 40px 0px #c0a6e5,
     -34px -30px 40px 0px #fff;
 }
 
@@ -103,7 +105,7 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  color: #23AC62;
+  color: #9142FF;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
@@ -111,15 +113,15 @@ body {
 }
 
 .user-name,
-.password {
+.password,
+.e-mail {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-
-.pass-view{
+.pass-view {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -127,18 +129,18 @@ body {
   position: relative;
 }
 
-.view-icon{
+.view-icon {
   position: absolute;
   right: 8px;
 }
 
-
 .user-name label,
-.password label {
+.password label,
+.e-mail label {
   margin-bottom: 5px;
   margin-left: 8px;
   font-family: "Inter", sans-serif;
-  color: #23AC62;
+  color: #9142FF;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -146,7 +148,8 @@ body {
 }
 
 .user-name input,
-.password input {
+.password input,
+.e-mail input {
   width: 96%;
   height: 6.5vh;
   font-family: "Inter", sans-serif;
@@ -154,10 +157,10 @@ body {
   font-size: 20px;
   padding-left: 15px;
   border-radius: 15px;
-  border: 1px solid #23AC62;
+  border: 1px solid #9142FF;
   background: #fff;
   transition-duration: 2s ease;
-  outline-color: #23AC62;
+  outline-color: #9142FF;
 }
 
 .radio-cont {
@@ -178,16 +181,24 @@ body {
   flex-shrink: 0;
   border-radius: 15px;
   border: 1px solid #000;
-  accent-color: #23AC62;
+  accent-color: #9142FF;
 }
 
 .remember label {
   color: #0057ff;
+  color: #000;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.remember label span {
+  color: #0057ff;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .login-btn {
@@ -198,14 +209,14 @@ body {
 }
 
 .login-btn button {
-  margin-top: 4.6vh;
+  margin-top: 2.5vh;
   width: 13.4vw;
   height: 47px;
   flex-shrink: 0;
   border-radius: 15px;
-  border: 1px solid #23AC62;
+  border: 1px solid #9142FF;
   background: #fff;
-  color: #23AC62;
+  color: #9142FF;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -224,7 +235,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-} 
+}
 
 .login-btn p a {
   margin: 0;
@@ -279,20 +290,23 @@ body {
   }
 
   .user-name label,
-  .password label {
+  .password label,
+  .e-mail label {
     margin-bottom: 5px;
     margin-left: 5px;
     font-size: 10.5px;
   }
 
   .user-name input,
-  .password input {
+  .password input,
+  .e-mail input {
     width: 24vw;
     height: 6.25vh;
     font-size: 16px;
     padding-left: 10px;
     border-radius: 12px;
   }
+
   .radio-cont {
     margin-top: -5px;
   }
@@ -304,6 +318,10 @@ body {
 
   .remember label {
     font-size: 8.5px;
+  }
+
+  .remember label span {
+    font-size: 10px;
   }
 
   .login-btn {
@@ -359,7 +377,7 @@ body {
     background-image: none;
     width: 100vw;
     height: 42vh;
-    background: #23AC62;
+    background: #9142FF;
     background-image: url("../../images/mobile-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -399,13 +417,15 @@ body {
   }
 
   .user-name label,
-  .password label {
+  .password label,
+  .e-mail label {
     font-size: 12px;
     margin-left: 5px;
   }
 
   .user-name input,
-  .password input {
+  .password input,
+  .e-mail input {
     width: 95%;
     height: 5.68vh;
     font-size: 18px;
@@ -424,7 +444,11 @@ body {
   }
 
   .remember label {
-    font-size: 12px;
+    font-size: 8px;
+  }
+
+  .remember label span {
+    font-size: 10px;
   }
 
   /* Submit Button */

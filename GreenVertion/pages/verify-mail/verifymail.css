@@ -6,8 +6,8 @@ body {
   box-sizing: border-box;
 }
 
-/* 23AC62  */
-
+/*main color- #23AC62 */
+/* shadow color- #90dbb3 */
 
 .main-container {
   width: 100vw;
@@ -30,7 +30,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* background: #ffd79e; */
+  background: #23AC62;
   box-shadow: 16px 17px 40px 0px #90dbb3,
     -34px -30px 40px 0px #fff;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .signin-form {
-  width: 22.7vw;
+  width: 26.5vw;
   height: 45vh;
   display: flex;
   flex-direction: column;
@@ -110,81 +110,11 @@ body {
   line-height: normal;
 }
 
-.user-name,
-.password {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-
-.pass-view{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.view-icon{
-  position: absolute;
-  right: 8px;
-}
-
-
-.user-name label,
-.password label {
-  margin-bottom: 5px;
-  margin-left: 8px;
+.signin-form p {
+  color: #000;
   font-family: "Inter", sans-serif;
-  color: #23AC62;
+  text-align: center;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.user-name input,
-.password input {
-  width: 96%;
-  height: 6.5vh;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  padding-left: 15px;
-  border-radius: 15px;
-  border: 1px solid #23AC62;
-  background: #fff;
-  transition-duration: 2s ease;
-  outline-color: #23AC62;
-}
-
-.radio-cont {
-  width: 100%;
-  margin-top: -5px;
-}
-
-.remember {
-  display: flex;
-  align-items: center;
-  left: 0;
-  bottom: 110px;
-}
-
-#html {
-  width: 19.137px;
-  height: 19.137px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  border: 1px solid #000;
-  accent-color: #23AC62;
-}
-
-.remember label {
-  color: #0057ff;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -212,30 +142,6 @@ body {
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
-}
-
-.login-btn p {
-  text-align: center;
-  margin: 5px 0 0 0;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.5);
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-} 
-
-.login-btn p a {
-  margin: 0;
-  padding: 0;
-  color: #0057ff;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-decoration: none;
 }
 
 /* ================>> TABLET RESPONSIVE (max-w-1024px) <<===============*/
@@ -269,7 +175,7 @@ body {
   }
 
   .signin-form {
-    width: 25.2vw;
+    width: 27vw;
     height: 100%;
     row-gap: 8px;
   }
@@ -278,32 +184,8 @@ body {
     font-size: 23.5px;
   }
 
-  .user-name label,
-  .password label {
-    margin-bottom: 5px;
-    margin-left: 5px;
-    font-size: 10.5px;
-  }
-
-  .user-name input,
-  .password input {
-    width: 24vw;
-    height: 6.25vh;
-    font-size: 16px;
-    padding-left: 10px;
-    border-radius: 12px;
-  }
-  .radio-cont {
-    margin-top: -5px;
-  }
-
-  #html {
-    width: 11px;
-    height: 11px;
-  }
-
-  .remember label {
-    font-size: 8.5px;
+  .signin-form p {
+    font-size: 14px;
   }
 
   .login-btn {
@@ -319,16 +201,6 @@ body {
     height: 28px;
     border-radius: 8.5px;
     font-size: 13px;
-  }
-
-  .login-btn p {
-    font-family: "Inter", sans-serif;
-    font-size: 10.5px;
-  }
-
-  .login-btn p a {
-    margin-top: 3px;
-    font-size: 10.5px;
   }
 }
 
@@ -385,11 +257,13 @@ body {
     height: 58vh;
     background-color: white;
     margin-top: 0px;
+    padding-top: 40px;
   }
 
   .signin-form {
     width: 100%;
     height: 100%;
+    justify-content: start;
     padding: 0px 40px;
     row-gap: 16px;
   }
@@ -398,33 +272,13 @@ body {
     font-size: 27px;
   }
 
-  .user-name label,
+  .signin-form p {
+    font-size: 12px;
+  }
+
   .password label {
     font-size: 12px;
     margin-left: 5px;
-  }
-
-  .user-name input,
-  .password input {
-    width: 95%;
-    height: 5.68vh;
-    font-size: 18px;
-    padding-left: 15px;
-    border-radius: 12px;
-  }
-
-  /* Radio Button */
-  .radio-cont {
-    margin-top: -5px;
-  }
-
-  #html {
-    width: 14px;
-    height: 14px;
-  }
-
-  .remember label {
-    font-size: 12px;
   }
 
   /* Submit Button */
@@ -434,13 +288,5 @@ body {
     height: 32px;
     border-radius: 10px;
     font-size: 15px;
-  }
-
-  .login-btn p {
-    font-size: 10px;
-  }
-
-  .login-btn p a {
-    font-size: 10px;
   }
 }

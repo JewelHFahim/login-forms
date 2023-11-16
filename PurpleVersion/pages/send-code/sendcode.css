@@ -6,8 +6,8 @@ body {
   box-sizing: border-box;
 }
 
-/* 23AC62  */
-
+/*main color- #9142FF */
+/*shadow color- #c0a6e5 */
 
 .main-container {
   width: 100vw;
@@ -30,8 +30,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* background: #ffd79e; */
-  box-shadow: 16px 17px 40px 0px #90dbb3,
+  background: #9142FF;
+  box-shadow: 16px 17px 40px 0px #c0a6e5,
     -34px -30px 40px 0px #fff;
 }
 
@@ -103,91 +103,50 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  color: #23AC62;
+  color: #9142FF;
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.user-name,
-.password {
+.place-code {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-
-.pass-view{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.view-icon{
-  position: absolute;
-  right: 8px;
-}
-
-
-.user-name label,
-.password label {
+.place-code label {
   margin-bottom: 5px;
   margin-left: 8px;
   font-family: "Inter", sans-serif;
-  color: #23AC62;
+  color: #9142FF;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.user-name input,
-.password input {
-  width: 96%;
-  height: 6.5vh;
+.code-fields {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.place-code input {
+  width: 4.7vw;
+  height: 5vh;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 20px;
   padding-left: 15px;
   border-radius: 15px;
-  border: 1px solid #23AC62;
+  border: 1px solid #9142FF;
   background: #fff;
   transition-duration: 2s ease;
-  outline-color: #23AC62;
-}
-
-.radio-cont {
-  width: 100%;
-  margin-top: -5px;
-}
-
-.remember {
-  display: flex;
-  align-items: center;
-  left: 0;
-  bottom: 110px;
-}
-
-#html {
-  width: 19.137px;
-  height: 19.137px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  border: 1px solid #000;
-  accent-color: #23AC62;
-}
-
-.remember label {
-  color: #0057ff;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  outline-color: #9142FF;
 }
 
 .login-btn {
@@ -203,39 +162,15 @@ body {
   height: 47px;
   flex-shrink: 0;
   border-radius: 15px;
-  border: 1px solid #23AC62;
+  border: 1px solid #9142FF;
   background: #fff;
-  color: #23AC62;
+  color: #9142FF;
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
-}
-
-.login-btn p {
-  text-align: center;
-  margin: 5px 0 0 0;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.5);
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-} 
-
-.login-btn p a {
-  margin: 0;
-  padding: 0;
-  color: #0057ff;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-decoration: none;
 }
 
 /* ================>> TABLET RESPONSIVE (max-w-1024px) <<===============*/
@@ -278,32 +213,19 @@ body {
     font-size: 23.5px;
   }
 
-  .user-name label,
-  .password label {
+  .place-code label {
     margin-bottom: 5px;
     margin-left: 5px;
     font-size: 10.5px;
   }
 
-  .user-name input,
-  .password input {
-    width: 24vw;
-    height: 6.25vh;
-    font-size: 16px;
-    padding-left: 10px;
-    border-radius: 12px;
-  }
-  .radio-cont {
-    margin-top: -5px;
+  .code-fields {
+    column-gap: 10px;
   }
 
-  #html {
-    width: 11px;
-    height: 11px;
-  }
-
-  .remember label {
-    font-size: 8.5px;
+  .place-code input {
+    width: 3.9vw;
+    height: 5.5vh;
   }
 
   .login-btn {
@@ -319,16 +241,6 @@ body {
     height: 28px;
     border-radius: 8.5px;
     font-size: 13px;
-  }
-
-  .login-btn p {
-    font-family: "Inter", sans-serif;
-    font-size: 10.5px;
-  }
-
-  .login-btn p a {
-    margin-top: 3px;
-    font-size: 10.5px;
   }
 }
 
@@ -359,7 +271,7 @@ body {
     background-image: none;
     width: 100vw;
     height: 42vh;
-    background: #23AC62;
+    background: #9142FF;
     background-image: url("../../images/mobile-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -384,12 +296,13 @@ body {
     width: 100vw;
     height: 58vh;
     background-color: white;
-    margin-top: 0px;
+    padding-top: 40px;
   }
 
   .signin-form {
     width: 100%;
     height: 100%;
+    justify-content: start;
     padding: 0px 40px;
     row-gap: 16px;
   }
@@ -398,49 +311,24 @@ body {
     font-size: 27px;
   }
 
-  .user-name label,
-  .password label {
+  .place-code label {
     font-size: 12px;
     margin-left: 5px;
   }
 
-  .user-name input,
-  .password input {
-    width: 95%;
-    height: 5.68vh;
+  .place-code input {
+    width: 50px;
+    height: 40px;
     font-size: 18px;
     padding-left: 15px;
     border-radius: 12px;
   }
 
-  /* Radio Button */
-  .radio-cont {
-    margin-top: -5px;
-  }
-
-  #html {
-    width: 14px;
-    height: 14px;
-  }
-
-  .remember label {
-    font-size: 12px;
-  }
-
-  /* Submit Button */
   .login-btn button {
     margin-top: 3.7vh;
     width: 175px;
     height: 32px;
     border-radius: 10px;
     font-size: 15px;
-  }
-
-  .login-btn p {
-    font-size: 10px;
-  }
-
-  .login-btn p a {
-    font-size: 10px;
   }
 }
